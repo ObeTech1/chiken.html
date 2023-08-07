@@ -91,43 +91,52 @@
     <h2>Race Registration!</h2>
 
     <form action="">
-        <label for="name"><b>First Name:</b></label>
-        <input type="text" name="first na" id="name">
-        <label for="last"><b>Last Name:</b></label>
-        <input type="text" name="last name" id="last">
+        <div>
+            <label for="name"><b>First Name:</b></label>
+            <input type="text" name="first na" id="name" required>
+            <label for="last"><b>Last Name:</b></label>
+            <input type="text" name="last name" id="last" required>
+
+        </div>
+       
 
         <p><b>Select a Race:</b></p>
-        <p>
+         
+        <div>
             <input type="radio" name="size" id="fun run">
             <label for="fun run"><b>Fun Run 5k</b></label>
-        </p>
+        </div>
 
-       <p>
+        <div>
             <input type="radio" name="size" id="fun run">
             <label for="fun run"><b>Half Marathon</b></label>
-       </p>
-       
-       <p>
+
+        </div>
+
+        <div>
             <input type="radio" name="size" id="fun run">
             <label for="fun run"><b>Full Marathon</b></label>
-       </p>
-        
-       <label for="email"> <b>Email:</b></label>
-       <input type="Email" name="emai" id="email">
 
-       <label for="password"> <b>Password:</b></label>
-       <input type="password" name="pass" id="password" min="6" max="16">
-       
-       <p>
-        <label for="age"><b>Select Age Group:</b></label>
-       <select name="age group" id="age">
-        <option value=""></option>
-        <option value="num">18-20</option>
-        <option value="num">21-23</option>
-        <option value="num">24-26</option>
-       </select>
-       </p>
-       
+        </div>
+        
+        <div>
+            <label for="email"> <b>Email:</b></label>
+            <input type="Email" name="emai" id="email" required>
+     
+            <label for="password"> <b>Password:</b></label>
+            <input type="password" name="pass" id="password" min="6" max="16" required>     
+        </div> <br>
+      
+        <div>
+            <label for="age"><b>Select Age Group:</b></label>
+            <select name="age group" id="age">
+             <option value=""></option>
+             <option value="num">18-20</option>
+             <option value="num">21-23</option>
+             <option value="num">24-26</option>
+            </select>
+
+        </div>
        <button><b>Register!</b></button>
     </form>
    
