@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+<body>
+    <h1>Forms Demo</h1>
+
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter username:</label>
+            <input id="username" type="text" placeholder="username">
+        </p>
+       
+        <p>
+            <label for="password">Password:</label>
+            <input id="password" type="password" placeholder="password">
+        </p>
+       
+        <p>
+            <label for="color">Color:</label>
+            <input id="color" type="color">
+        </p>
+       
+        <p>
+            <label for="number">Number:</label> 
+            <input id="number" type="number" >
+        </p>
+       
+    </form>
+
+    <h2>Hijacking search</h2>
+        <h3>Seaech Reddit</h3>
+    <form action="http://www.reddit.com/search">
+        <input type="text" name="q">
+        <button>Search reddit</button>
+     </form>
+
+     <h3>Search Google</h3>
+    
+    <form action="https://www.google.com/search">
+        <input type="text" name="q" >
+        <button>Search google</button>
+    </form>
+
+    <h2>More inputs !</h2>
+    <form action="/bird">
+        <input type="checkbox" name="agree_tos" id="agree" >
+        <label for="agree"> i agree to terms and conditions</label>
+        <p>
+        <label for="xs">XS:</label>
+        <input type="radio" name="size" id="xs">
+        <label for="s">S</label>
+        <input type="radio" name="size" id="s">
+        <label for="m">M</label>
+        <input type="radio" name="size" id="m">
+        </p>
+        <p>
+            <label for="meal"> please select an entree:</label>
+            <select name="meal" id="meal">
+                <option value="none"></option>
+                <option value="fish">fish</option>
+                <option value="veg">vegetable</option>
+                <option value="rice">rice</option>
+            </select>
+        </p>
+        <p>
+            <label title="chesse">Amount of chesse</label>
+            <input type="range" name="chesse" id="chesse" min="1" max="10"  name="chesse_level">
+        </p>
+        <p>
+            <label for="requests">any spacial requests?</label>
+            <textarea name="" id="requests" cols="30" rows="10"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <h3>Validation demo</h3>
+    <form action="/dummy">
+        <label for="frst">First Name</label>
+        <input type="text" name="first" id="first">
+        <p>
+            <label for="user">Username</label>
+            <input type="text" name="username" id="user" minlength="5" maxlength="13">
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <h2>Race Registration!</h2>
+
+    <form action="">
+        <label for="name"><b>First Name:</b></label>
+        <input type="text" name="first na" id="name">
+        <label for="last"><b>Last Name:</b></label>
+        <input type="text" name="last name" id="last">
+
+        <p><b>Select a Race:</b></p>
+        <p>
+            <input type="radio" name="size" id="fun run">
+            <label for="fun run"><b>Fun Run 5k</b></label>
+        </p>
+
+       <p>
+            <input type="radio" name="size" id="fun run">
+            <label for="fun run"><b>Half Marathon</b></label>
+       </p>
+       
+       <p>
+            <input type="radio" name="size" id="fun run">
+            <label for="fun run"><b>Full Marathon</b></label>
+       </p>
+        
+       <label for="email"> <b>Email:</b></label>
+       <input type="Email" name="emai" id="email">
+
+       <label for="password"> <b>Password:</b></label>
+       <input type="password" name="pass" id="password" min="6" max="16">
+       
+       <p>
+        <label for="age"><b>Select Age Group:</b></label>
+       <select name="age group" id="age">
+        <option value=""></option>
+        <option value="num">18-20</option>
+        <option value="num">21-23</option>
+        <option value="num">24-26</option>
+       </select>
+       </p>
+       
+       <button><b>Register!</b></button>
+    </form>
+   
+
+</body>
+</html>
